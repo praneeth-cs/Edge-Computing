@@ -1,0 +1,62 @@
+[
+  {
+    "anomaly_id": "A001",
+    "type": "error_burst",
+    "description": "45 errors in 3 minutes from payment-service",
+    "start": "2024-01-02 02:12:00",
+    "end": "2024-01-02 02:15:00",
+    "service": "payment-service",
+    "severity": "critical"
+  },
+  {
+    "anomaly_id": "A002",
+    "type": "brute_force",
+    "description": "80 failed logins from single IP in 8 minutes",
+    "start": "2024-01-03 14:00:00",
+    "end": "2024-01-03 14:08:00",
+    "ip_address": "10.0.0.99",
+    "service": "auth-service",
+    "severity": "high"
+  },
+  {
+    "anomaly_id": "A003",
+    "type": "traffic_spike",
+    "description": "300 requests from single IP in 10 minutes (bot activity)",
+    "start": "2024-01-04 09:00:00",
+    "end": "2024-01-04 09:10:00",
+    "ip_address": "203.0.113.77",
+    "severity": "medium"
+  },
+  {
+    "anomaly_id": "A004",
+    "type": "service_degradation",
+    "description": "order-service avg response >5000ms for 30 minutes",
+    "start": "2024-01-05 16:30:00",
+    "end": "2024-01-05 17:00:00",
+    "service": "order-service",
+    "severity": "high"
+  },
+  {
+    "anomaly_id": "A005",
+    "type": "off_hours_activity",
+    "description": "Admin bulk data access at 03:17 \u2014 25 export requests",
+    "start": "2024-01-06 03:17:00",
+    "end": "2024-01-06 03:47:00",
+    "user": "admin_001",
+    "service": "user-service",
+    "severity": "medium"
+  },
+  {
+    "anomaly_id": "A006",
+    "type": "critical_failure",
+    "description": "90 CRITICAL errors across 3 services in 7.5 minutes",
+    "start": "2024-01-07 22:00:00",
+    "end": "2024-01-07 22:08:00",
+    "services": [
+      "api-gateway",
+      "payment-service",
+      "inventory-service"
+    ],
+    "severity": "critical"
+  }
+]

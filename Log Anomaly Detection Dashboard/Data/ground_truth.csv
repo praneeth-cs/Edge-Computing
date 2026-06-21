@@ -1,0 +1,7 @@
+anomaly_id,type,description,start,end,service,severity,ip_address,user,services
+A001,error_burst,45 errors in 3 minutes from payment-service,2024-01-02 02:12:00,2024-01-02 02:15:00,payment-service,critical,,,
+A002,brute_force,80 failed logins from single IP in 8 minutes,2024-01-03 14:00:00,2024-01-03 14:08:00,auth-service,high,10.0.0.99,,
+A003,traffic_spike,300 requests from single IP in 10 minutes (bot activity),2024-01-04 09:00:00,2024-01-04 09:10:00,,medium,203.0.113.77,,
+A004,service_degradation,order-service avg response >5000ms for 30 minutes,2024-01-05 16:30:00,2024-01-05 17:00:00,order-service,high,,,
+A005,off_hours_activity,Admin bulk data access at 03:17 — 25 export requests,2024-01-06 03:17:00,2024-01-06 03:47:00,user-service,medium,,admin_001,
+A006,critical_failure,90 CRITICAL errors across 3 services in 7.5 minutes,2024-01-07 22:00:00,2024-01-07 22:08:00,,critical,,,"['api-gateway', 'payment-service', 'inventory-service']"
