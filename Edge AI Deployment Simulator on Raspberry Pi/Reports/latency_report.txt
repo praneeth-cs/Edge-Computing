@@ -1,0 +1,20 @@
+
++-----------+     +--------------+     +-------------+     +-------------+
+|  Sensor   | --> | EdgeGateway  | --> | EdgeServer  | --> | CloudServer |
++-----------+     +--------------+     +-------------+     +-------------+
+                        |                    |
+                        |                    v
+                        |              +-----------+
+                        +------------> | ML Model  |
+                                       +-----------+
+
+Flow: Sensor → Gateway → Edge → (if confidence < 0.6) → Cloud
+
+=== LATENCY REPORT ===
+Sensor Avg Latency: 1.673 ms
+Gateway Avg Latency: 2.431 ms
+Edge Avg Latency: 10.588 ms
+Cloud Avg Latency: 114.577 ms
+
+Escalated to Cloud: 41.00%
+Throughput: 16.21 points/sec
