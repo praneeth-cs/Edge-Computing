@@ -1,0 +1,17 @@
+
+Raspberry Pi Edge Health Monitoring Report
+==========================================
+
+Total Readings: 100
+
+Average Health Score: 83.05
+
+Warnings Detected: 29
+
+Critical Alerts: 6
+
+Processed Locally: 65
+
+Uploaded To Cloud: 35
+
+Bandwidth Saved: 65.0%
